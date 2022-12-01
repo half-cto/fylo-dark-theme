@@ -55,6 +55,7 @@ table {
 }
 
 body {
-  background-color: aquamarine;
-  color: black;
+  background-color: #1B2330;
+  background-image: url(../images/bg-curvy-desktop.svg);
+  color: #FFF;
 }/*# sourceMappingURL=main.css.map */
