@@ -16,14 +16,21 @@ $clr-acc-light-red: hsl(0, 100%, 63%);
 // * Neutral Colors
 
 $clr-white: #FFF;
+$clr-clear: rgba(0, 0, 0, 0);
 
-$font-weights: (
-    "regular": 400,
-    "medium": 500,
-    "bold": 700
-);
+// * Font and Line Height sizes
+
+$fs-700: rem(24);
+$lh-700: rem(36);
+$fs-500: rem(18);
+$lh-500: rem(24);
+$fs-400: rem(14);
+$lh-400: rem(21);
+$fs-300: rem(12);
+$lh-300: rem(14);
 
 
+// * Media queries breakpoint sizes
 
 $desktop-size: 60rem;
 

@@ -1,0 +1,35 @@
+@import "./functions", "./variables";
+
+// * media queries
+
+@mixin desktop {
+    @media screen and (min-size: $desktop-size) {
+        @content
+    }
+}
+
+@mixin flex($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+@mixin font-setup($fs, $lh, $weight) {
+    font-size: $fs;
+    line-height: $lh;
+    font-weight: $weight;
+}
+
+@mixin font-raleway {
+    font-family: 'Raleway', sans-serif;    
+}
+
+@mixin font-open-sans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+@mixin link {
+    color: $clr-white;
+    text-decoration: none;
+}

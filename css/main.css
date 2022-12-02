@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
 *,
 *::before,
 *::after {
@@ -55,11 +56,112 @@ table {
 }
 
 body {
-  background-color: #1B2330;
-  background-image: url(../images/bg-curvy-desktop.svg);
+  background-color: paleturquoise;
+  background-repeat: no-repeat;
   color: #FFF;
+  min-width: 375px;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+
+p {
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+button {
+  display: block;
+  background: linear-gradient(134.79deg, #63E1D9 -42.11%, #34A0CD 100%);
+  color: #FFF;
+  border: none;
+  border-radius: 24px;
+  padding-block: 1rem;
+  margin-inline: auto;
+  cursor: pointer;
+}
+button:hover {
+  background: linear-gradient(134.79deg, #63E1D9 -42.11%, #63E1D9 100%);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+header img {
+  height: 1.5rem;
+}
+header ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+header li {
+  display: inline;
+}
+header a {
+  color: #FFF;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.3125rem;
+}
+
+.hero-sct {
+  padding-inline: 1.5rem;
+  margin-top: 3rem;
+  background: url(../images/bg-curvy-mobile.svg) no-repeat bottom calc(45vh - 30vw) left 0vh, linear-gradient(to top, hsl(218deg, 28%, 13%) 0vh, hsl(218deg, 28%, 13%) calc(45vh - 30vw + 10px), paleturquoise calc(45vh - 30vw + 10px), paleturquoise 100vh);
+  background-size: contain;
+}
+.hero-sct > * {
+  max-width: 325px;
+  display: block;
+  margin-inline: auto;
+}
+.hero-sct img {
+  display: block;
+  width: 100%;
+  max-width: 327px;
+  margin-bottom: 2.0625rem;
+  margin-inline: auto;
+}
+.hero-sct__background {
+  position: absolute;
+  z-index: -1;
+}
+.hero-sct h1 {
+  margin-bottom: 1.15625rem;
+  max-width: 375px;
+}
+.hero-sct p {
+  margin-bottom: 2rem;
+}
+.hero-sct button {
+  padding-inline: 5.0625rem;
+}
+
+.features-sct {
+  padding-top: 7.5rem;
+  position: relative;
+  background-color: hsl(218deg, 28%, 13%);
 }/*# sourceMappingURL=main.css.map */

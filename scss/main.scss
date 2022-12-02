@@ -1,12 +1,141 @@
-@import "./resets", "./variables", "./functions";
-
+@import "./resets", "./variables", "./functions", "./mixins";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
 
 body {
-    background-color: $clr-bg;
-    background-image: url(../images/bg-curvy-desktop.svg);
-    color:#FFF;
+    background-color: paleturquoise;
+    background-repeat: no-repeat;
+    color: $clr-white;
+    min-width: 375px;
 }
 
 h1 {
-    font-size: rem(40);
+    @include font-setup($fs-700, $lh-700, 700);
+    @include font-raleway;
+    text-align: center
+}
+
+h2 {
+    @include font-setup($fs-500, $lh-500, 700);
+    @include font-raleway;
+    text-align: center
+}
+
+p {
+    @include font-setup($fs-400, $lh-400, 400);
+    @include font-open-sans;
+    text-align: center;
+}
+
+button {
+    display: block;
+    background: linear-gradient(134.79deg, #63E1D9 -42.11%, #34A0CD 100%);
+    color: $clr-white;
+    border: none;
+    border-radius: 24px;
+    padding-block: rem(16);
+    margin-inline: auto;
+    cursor: pointer;
+
+    &:hover {
+        background: linear-gradient(134.79deg, #63E1D9 -42.11%, #63E1D9 100%);
+    }
+}
+
+
+// * ====================== HEADING Styles ===========================
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin : {
+        top: rem(24);
+        left: rem(24);
+        right: rem(24);
+    }
+
+    img {
+        height: rem(24);
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        gap: rem(24);
+    }
+
+    li {
+        display: inline;
+    }
+
+    a {
+        @include link;
+        @include font-raleway;
+        font-size: $fs-300;
+        line-height: $lh-400;
+    }
+}
+
+
+// * =================== HERO SECTION Styles ========================
+
+.hero-sct {
+    padding-inline: rem(24);
+    margin-top: rem(48);
+    background: url(../images/bg-curvy-mobile.svg)
+                    no-repeat 
+                    bottom calc(45vh - 30vw)
+                    left 0vh,
+                linear-gradient(
+                    to top,
+                    $clr-bg-main 0vh,
+                    $clr-bg-main calc(45vh - 30vw + 10px),
+                    paleturquoise calc(45vh - 30vw + 10px),
+                    paleturquoise 100vh
+      );
+    background-size: contain;
+
+    & > * {
+        max-width: 325px;
+        display: block;
+        margin-inline: auto;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        max-width: 327px;
+        margin-bottom: rem(33);
+        margin-inline: auto;
+    }
+
+    &__background {
+        position: absolute;
+        z-index: -1;
+        // top: -141px;
+    }
+
+    h1 {
+        margin-bottom: rem(18.5);
+        max-width: 375px;
+    }
+
+    p {
+        margin-bottom: rem(32);
+    }
+
+    button {
+        padding-inline: rem(81);
+    }
+}
+
+
+// * =================== FEATURES SECTION Styles ========================
+
+.features-sct {
+    padding-top:  rem(120);
+    position: relative;
+    background-color: $clr-bg-main;
+
 }
