@@ -1,8 +1,12 @@
-@import "./resets", "./variables";
+@import "./resets", "./variables", "./functions";
 
 
 body {
     background-color: $clr-bg;
     background-image: url(../images/bg-curvy-desktop.svg);
     color:#FFF;
+}
+
+h1 {
+    font-size: rem(40);
 }

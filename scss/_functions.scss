@@ -1,0 +1,11 @@
+@function em($px) {
+    @return $px / 16 * 1em;
+}
+
+@function rem($px) {
+    @return $px / 16 * 1rem;
+}
+
+@function weight($weight-name) {
+    @return map-get($font-weights, $weight-name)
+}
