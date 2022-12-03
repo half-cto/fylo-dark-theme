@@ -178,8 +178,8 @@ header li a {
 .hero-sct {
   padding-inline: 1.5rem;
   margin-top: 3rem;
-  background-size: contain;
   background: url(../images/bg-curvy-mobile.svg) no-repeat bottom calc(45vh - 30vw) left 0vw, linear-gradient(to top, hsl(218deg, 28%, 13%) 0vh, hsl(218deg, 28%, 13%) calc(45vh - 30vw + 10px), hsl(217deg, 28%, 15%) calc(45vh - 30vw + 10px), hsl(217deg, 28%, 15%) 100vh);
+  background-size: contain;
 }
 @media screen and (min-width: 40em) {
   .hero-sct {

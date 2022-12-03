@@ -132,9 +132,8 @@ header {
 .hero-sct {
     padding-inline: rem(24);
     margin-top: rem(48);
-    background-size: contain;
     background: url(../images/bg-curvy-mobile.svg)
-                    no-repeat 
+                    no-repeat
                     bottom calc(45vh - 30vw)
                     left 0vw,
                 linear-gradient(
@@ -144,6 +143,7 @@ header {
                     $clr-bg-intro calc(45vh - 30vw + 10px),
                     $clr-bg-intro 100vh
       );
+      background-size: contain;
     @include desktop {
         background: url(../images/bg-curvy-desktop.svg)
                     no-repeat 
