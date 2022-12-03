@@ -119,6 +119,10 @@ header ul {
 header li {
   display: inline;
 }
+header li:hover {
+  font-weight: 700;
+  text-decoration: underline;
+}
 header a {
   color: #FFF;
   text-decoration: none;
@@ -212,8 +216,9 @@ header a {
 }
 .productive-sct__info-card div img {
   display: inline;
-  width: 0.75rem;
+  width: 1rem;
   padding: 0;
+  transform: translateY(0.25rem);
 }
 
 .testimonial-sct {
@@ -252,17 +257,20 @@ header a {
 }
 .testimonial-sct__card .--name-bold {
   font-weight: 700;
+  text-align: left;
   font-size: 0.625rem;
   line-height: 0.75rem;
   margin-bottom: 0.25rem;
+  letter-spacing: 0.0625rem;
 }
 .testimonial-sct__card .--position-small {
   font-size: 0.4375rem;
   line-height: 0.625rem;
+  letter-spacing: 0.0625rem;
 }
 
 .get-access-sct {
-  background: linear-gradient(to bottom, hsl(218deg, 28%, 13%) 0%, hsl(218deg, 28%, 13%) 70%, hsl(216deg, 53%, 9%) 70%, hsl(216deg, 53%, 9%) 100%);
+  background: linear-gradient(to bottom, hsl(218deg, 28%, 13%) 0%, hsl(218deg, 28%, 13%) 65%, hsl(216deg, 53%, 9%) 65%, hsl(216deg, 53%, 9%) 100%);
   padding-top: 10rem;
 }
 .get-access-sct__card {
@@ -271,6 +279,7 @@ header a {
   background-color: #1B2330;
   border-radius: 0.5625rem;
   padding: 2.5rem 1.75rem;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.254274);
 }
 .get-access-sct__card h2 {
   margin-bottom: 1rem;

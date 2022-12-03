@@ -67,6 +67,11 @@ header {
 
     li {
         display: inline;
+
+        &:hover {
+            font-weight: 700;
+            text-decoration: underline;
+        }
     }
 
     a {
@@ -194,8 +199,9 @@ header {
 
             img {
                 display: inline;
-                width: rem(12);
+                width: rem(16);
                 padding: 0;
+                transform: translateY(rem(4));
             }
         }
     }
@@ -243,13 +249,16 @@ header {
         }
         .--name-bold {
             font-weight: 700;
+            text-align: left;
             font-size: rem(10);
             line-height: rem(12);
             margin-bottom: rem(4);
+            letter-spacing: rem(1);
         }
         .--position-small {
             font-size: rem(7);
             line-height: rem(10);
+            letter-spacing: rem(1);
         }
     }
 }
@@ -261,8 +270,8 @@ header {
     background: linear-gradient(
         to bottom,
         $clr-bg-main 0%,
-        $clr-bg-main 70%,
-        $clr-bg-footer 70%,
+        $clr-bg-main 65%,
+        $clr-bg-footer 65%,
         $clr-bg-footer 100%);
         padding-top: rem(160);
 
@@ -272,6 +281,7 @@ header {
         background-color: $clr-bg-get-started;
         border-radius: rem(9);
         padding: rem(40) rem(28);
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.254274);
         
         h2 {
             margin-bottom: rem(16);
@@ -298,7 +308,7 @@ header {
     }
 }
 
-// * =================== GET ACCESS SECTION Styles ========================
+// * =================== FOOTER SECTION Styles ========================
 
 footer {
     padding-top: rem(73);
