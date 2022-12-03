@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
 
 body {
-    background-color: paleturquoise;
+    background-color: $clr-bg-intro;
     background-repeat: no-repeat;
     color: $clr-white;
     min-width: 375px;
@@ -36,7 +36,7 @@ button {
     margin-inline: auto;
     cursor: pointer;
 
-    &:hover {
+    &:active {
         background: linear-gradient(134.79deg, #63E1D9 -42.11%, #63E1D9 100%);
     }
 }
@@ -91,8 +91,8 @@ header {
                     to top,
                     $clr-bg-main 0vh,
                     $clr-bg-main calc(45vh - 30vw + 10px),
-                    paleturquoise calc(45vh - 30vw + 10px),
-                    paleturquoise 100vh
+                    $clr-bg-intro calc(45vh - 30vw + 10px),
+                    $clr-bg-intro 100vh
       );
     background-size: contain;
 
@@ -135,7 +135,242 @@ header {
 
 .features-sct {
     padding-top:  rem(120);
-    position: relative;
+    background-color: $clr-bg-main;
+    padding-inline: rem(28);
+
+    &__card {
+        @include flex(column);
+
+        img {
+            width: 70px;
+            margin-bottom: rem(32);
+        }
+
+        h2 {
+            margin-bottom: rem(8);
+        }
+
+        p {
+            margin-bottom: rem(80);
+        }
+    }
+}
+
+
+// * =================== PRODUCTIVE SECTION Styles ========================
+
+.productive-sct {
+    padding-inline: rem(28);
     background-color: $clr-bg-main;
 
+    img {
+        display: block;
+        width: 100%;
+        padding-bottom: rem(48);
+    }
+
+    &__info-card {
+        h2 {
+            text-align: center;
+            padding-bottom: rem(16);
+        }
+        p {
+            text-align: left;
+            margin-bottom: rem(16);
+        }
+
+        div {
+            display: inline;
+            border-bottom: 1px solid $clr-acc-cyan;
+            padding-bottom: rem(6);
+            
+
+            a {
+                color: $clr-acc-cyan;
+                @include font-open-sans;
+                font-size: $fs-300;
+                text-decoration: none;
+            }
+
+            img {
+                display: inline;
+                width: rem(12);
+                padding: 0;
+            }
+        }
+    }
+}
+
+// * =================== TESTIMONIALS SECTION Styles ========================
+
+.testimonial-sct {
+    background-color: $clr-bg-main;
+    background-image: url(../images/bg-quotes.png);
+    background-repeat: no-repeat;
+    padding-top: rem(136);
+    background-position: top rem(126) left rem(36);
+
+    &__card {
+        display: block;
+        background-color: $clr-bg-testimonials;
+        width: calc(100% - 96px);
+        margin-inline: auto;
+        margin-top: rem(24);
+        border-radius: rem(4);
+        padding: {
+            top: rem(24);
+            right: rem(20);
+            bottom: rem(20);
+            left: rem(26);
+        };
+
+        & > p {
+            font-size: rem(10);
+            text-align: left;
+            padding-bottom: rem(17);
+        }
+
+        &__profile-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: rem(8);
+            
+            img {
+                width: rem(24);
+                border-radius: rem(30);
+            }
+        }
+        .--name-bold {
+            font-weight: 700;
+            font-size: rem(10);
+            line-height: rem(12);
+            margin-bottom: rem(4);
+        }
+        .--position-small {
+            font-size: rem(7);
+            line-height: rem(10);
+        }
+    }
+}
+
+
+// * =================== GET ACCESS SECTION Styles ========================
+
+.get-access-sct {
+    background: linear-gradient(
+        to bottom,
+        $clr-bg-main 0%,
+        $clr-bg-main 70%,
+        $clr-bg-footer 70%,
+        $clr-bg-footer 100%);
+        padding-top: rem(160);
+
+    &__card {
+        width: calc(100% - rem(40));
+        margin-inline: auto;
+        background-color: $clr-bg-get-started;
+        border-radius: rem(9);
+        padding: rem(40) rem(28);
+        
+        h2 {
+            margin-bottom: rem(16);
+        }
+
+        p {
+            margin-bottom: rem(32);
+        }
+
+        input {
+            border: none;
+            border-radius: rem(24);
+            width: 100%;
+            padding-block: rem(16);
+            padding-inline: rem(28);
+            margin-bottom: rem(24);
+            color: $clr-bg-testimonials;
+        }
+
+        button {
+            width: 100%;
+            font-weight: 700;
+        }
+    }
+}
+
+// * =================== GET ACCESS SECTION Styles ========================
+
+footer {
+    padding-top: rem(73);
+    padding-inline: rem(28);
+    background-color: $clr-bg-footer;
+
+    & > img {
+        width: rem(108);
+        margin-bottom: rem(35);
+    }
+
+    .__contacts-grid {
+        display: grid;
+        grid-template-columns: 10% auto;
+        row-gap: rem(16);
+        img {
+            padding-top: rem(4);
+        }
+        p {
+            text-align: left;
+        }
+    }
+
+    .--list-heading {
+        text-align: left;
+        font-size: rem(16);
+        line-height: rem(22);
+        margin-top:rem(48);
+    }
+
+    ul {
+
+        
+
+        a {
+            color: $clr-white;
+            text-decoration: none;
+            @include font-open-sans;
+
+            &:hover {
+                color: $clr-acc-cyan;
+            }
+
+            &:active {
+                color: $clr-acc-blue;
+            }
+        }
+
+        li {
+            margin-top: rem(16);
+        }
+    }
+
+    .__social {
+        @include flex(row);
+        gap: rem(10);
+        padding-block: rem(56);
+        i {
+            padding: rem(8);
+            border: solid white 1px;
+            border-radius: rem(30);
+            cursor: pointer;
+
+            &:hover {
+                color: $clr-acc-cyan;
+                border-color: $clr-acc-cyan;
+            }
+    
+            &:active {
+                color: $clr-acc-blue;
+                border-color: $clr-acc-blue;
+            }
+        }
+    }
 }

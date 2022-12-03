@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./css/main.css">
   
   <title> Fylo landing page with dark theme and features grid</title>
+  <script src="https://kit.fontawesome.com/cfdd99c69d.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -79,79 +80,107 @@
           <h2>Stay productive, wherever you are</h2>
           <p>
             Never let location be an issue when accessing your files. Fylo has you covered for all of your file
-            storage needs.
+            storage needs. <br>
+            <br>
             Securely share files and folders with friends, family and colleagues for live collaboration. No email
             attachments required.
           </p>
-          <a href="">See how Fylo works</a>
+          <div>
+            <a href="">See how Fylo works</a>
+            <img src="./images/icon-arrow.svg" alt="Arrow icon">
+          </div>
         </div>
 
     </section>
     <section class="testimonial-sct">
 
         <div class="testimonial-sct__card">
-          Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
-          become a well-oiled collaboration machine.
-          <img src="./images/profile-1.jpg" alt="profile picture">
-          Satish Patel
-          Founder & CEO, Huddle
+          <p>
+            Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
+            become a well-oiled collaboration machine.
+          </p>
+          <div class="testimonial-sct__card__profile-wrap">
+            <img src="./images/profile-1.jpg" alt="profile picture">
+            <div>
+              <p class="--name-bold">Satish Patel</p>
+              <p class="--position-small">Founder & CEO, Huddle</p>
+            </div>
+          </div>
         </div>
 
         <div class="testimonial-sct__card">
-          Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
-          become a well-oiled collaboration machine.
-          <img src="./images/profile-2.jpg" alt="profile picture">
-          Bruce McKenzie
-          Founder & CEO, Huddle
+          <p>
+            Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
+            become a well-oiled collaboration machine.
+          </p>
+          <div class="testimonial-sct__card__profile-wrap">
+            <img src="./images/profile-2.jpg" alt="profile picture">
+            <div>
+              <p class="--name-bold">Bruce McKenzie</p>
+              <p class="--position-small">Founder & CEO, Huddle</p>
+            </div>
+          </div>
         </div>
 
         <div class="testimonial-sct__card">
-          Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
-          become a well-oiled collaboration machine.
-          <img src="./images/profile-3.jpg" alt="profile picture">
-          Iva Boyd
-          Founder & CEO, Huddle
+          <p>
+            Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
+            become a well-oiled collaboration machine.
+          </p>
+          <div class="testimonial-sct__card__profile-wrap">
+            <img src="./images/profile-3.jpg" alt="profile picture">
+            <div>
+              <p class="--name-bold">Iva Boyd</p>
+              <p class="--position-small">Founder & CEO, Huddle</p>
+            </div>
+          </div>
         </div>
 
     </section>
     <section class="get-access-sct">
-      
-        <h2>Get early access today</h2>
-        <p>
-          It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
-          questions, our support team would be happy to help you.
-        </p>
-        <div>
-          <button type="button">Get Started</button>
-          <button type="button">For Free</button>
+        <div class="get-access-sct__card">
+          <h2>Get early access today</h2>
+          <p>
+            It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+            questions, our support team would be happy to help you.
+          </p>
+          <div>
+            <input type="text" name="email" id="email" aria-label="e-mail input field" placeholder="email@example.com">
+            <button type="button">Get Started For Free</button>
+          </div>
         </div>
     </section>
   </main>
   <footer>
       <img src="./images/logo.svg" alt="Fylo logo">
-      <div class="footer-sct">
-        <div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua</p>
-        </div>
-        <div>
-          <p>+1-543-123-4567</p>
-          <p>example@fylo.com</p>
-        </div>
-        <div>
-          <a href="">About Us</a>
-          <a href="">Jobs</a>
-          <a href="">Press</a>
-          <a href="">Blog</a>
-        </div>
-        <div>
-          <a href="">Contact Us</a>
-          <a href="">Terms</a>
-          <a href="">Privacy</a>
-        </div>
-        <div>
-          <!-- TODO need to add media icons -->
-        </div>
+      <div class="__contacts-grid">
+        <img src="./images/icon-location.svg" alt="location icon">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua</p>
+        <img src="./images/icon-phone.svg" alt="phone icon">
+        <p>+1-543-123-4567</p>
+        <img src="./images/icon-email.svg" alt="email icon">
+        <p>example@fylo.com</p>
+      </div>
+      <div class="__about">
+        <p class="--list-heading">About Us</p>
+        <ul>
+          <li><a href="">Jobs</a></li>
+          <li><a href="">Press</a></li>
+          <li><a href="">Blog</a></li>
+        </ul>
+      </div>
+      <div class="__contact">
+        <p class="--list-heading">Contact Us</p>
+        <ul>
+          <li><a href="">Terms</a></li>
+          <li><a href="">Privacy</a></li>
+        </ul>
+      </div>
+      <div class="__social">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
       </div>
   </footer>
 </body>

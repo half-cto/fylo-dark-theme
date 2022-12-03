@@ -56,7 +56,7 @@ table {
 }
 
 body {
-  background-color: paleturquoise;
+  background-color: hsl(217deg, 28%, 15%);
   background-repeat: no-repeat;
   color: #FFF;
   min-width: 375px;
@@ -96,7 +96,7 @@ button {
   margin-inline: auto;
   cursor: pointer;
 }
-button:hover {
+button:active {
   background: linear-gradient(134.79deg, #63E1D9 -42.11%, #63E1D9 100%);
 }
 
@@ -130,7 +130,7 @@ header a {
 .hero-sct {
   padding-inline: 1.5rem;
   margin-top: 3rem;
-  background: url(../images/bg-curvy-mobile.svg) no-repeat bottom calc(45vh - 30vw) left 0vh, linear-gradient(to top, hsl(218deg, 28%, 13%) 0vh, hsl(218deg, 28%, 13%) calc(45vh - 30vw + 10px), paleturquoise calc(45vh - 30vw + 10px), paleturquoise 100vh);
+  background: url(../images/bg-curvy-mobile.svg) no-repeat bottom calc(45vh - 30vw) left 0vh, linear-gradient(to top, hsl(218deg, 28%, 13%) 0vh, hsl(218deg, 28%, 13%) calc(45vh - 30vw + 10px), hsl(217deg, 28%, 15%) calc(45vh - 30vw + 10px), hsl(217deg, 28%, 15%) 100vh);
   background-size: contain;
 }
 .hero-sct > * {
@@ -162,6 +162,195 @@ header a {
 
 .features-sct {
   padding-top: 7.5rem;
-  position: relative;
   background-color: hsl(218deg, 28%, 13%);
+  padding-inline: 1.75rem;
+}
+.features-sct__card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.features-sct__card img {
+  width: 70px;
+  margin-bottom: 2rem;
+}
+.features-sct__card h2 {
+  margin-bottom: 0.5rem;
+}
+.features-sct__card p {
+  margin-bottom: 5rem;
+}
+
+.productive-sct {
+  padding-inline: 1.75rem;
+  background-color: hsl(218deg, 28%, 13%);
+}
+.productive-sct img {
+  display: block;
+  width: 100%;
+  padding-bottom: 3rem;
+}
+.productive-sct__info-card h2 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.productive-sct__info-card p {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.productive-sct__info-card div {
+  display: inline;
+  border-bottom: 1px solid hsl(176deg, 68%, 64%);
+  padding-bottom: 0.375rem;
+}
+.productive-sct__info-card div a {
+  color: hsl(176deg, 68%, 64%);
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+.productive-sct__info-card div img {
+  display: inline;
+  width: 0.75rem;
+  padding: 0;
+}
+
+.testimonial-sct {
+  background-color: hsl(218deg, 28%, 13%);
+  background-image: url(../images/bg-quotes.png);
+  background-repeat: no-repeat;
+  padding-top: 8.5rem;
+  background-position: top 7.875rem left 2.25rem;
+}
+.testimonial-sct__card {
+  display: block;
+  background-color: hsl(219deg, 30%, 18%);
+  width: calc(100% - 96px);
+  margin-inline: auto;
+  margin-top: 1.5rem;
+  border-radius: 0.25rem;
+  padding-top: 1.5rem;
+  padding-right: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 1.625rem;
+}
+.testimonial-sct__card > p {
+  font-size: 0.625rem;
+  text-align: left;
+  padding-bottom: 1.0625rem;
+}
+.testimonial-sct__card__profile-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+.testimonial-sct__card__profile-wrap img {
+  width: 1.5rem;
+  border-radius: 1.875rem;
+}
+.testimonial-sct__card .--name-bold {
+  font-weight: 700;
+  font-size: 0.625rem;
+  line-height: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+.testimonial-sct__card .--position-small {
+  font-size: 0.4375rem;
+  line-height: 0.625rem;
+}
+
+.get-access-sct {
+  background: linear-gradient(to bottom, hsl(218deg, 28%, 13%) 0%, hsl(218deg, 28%, 13%) 70%, hsl(216deg, 53%, 9%) 70%, hsl(216deg, 53%, 9%) 100%);
+  padding-top: 10rem;
+}
+.get-access-sct__card {
+  width: calc(100% - 2.5rem);
+  margin-inline: auto;
+  background-color: #1B2330;
+  border-radius: 0.5625rem;
+  padding: 2.5rem 1.75rem;
+}
+.get-access-sct__card h2 {
+  margin-bottom: 1rem;
+}
+.get-access-sct__card p {
+  margin-bottom: 2rem;
+}
+.get-access-sct__card input {
+  border: none;
+  border-radius: 1.5rem;
+  width: 100%;
+  padding-block: 1rem;
+  padding-inline: 1.75rem;
+  margin-bottom: 1.5rem;
+  color: hsl(219deg, 30%, 18%);
+}
+.get-access-sct__card button {
+  width: 100%;
+  font-weight: 700;
+}
+
+footer {
+  padding-top: 4.5625rem;
+  padding-inline: 1.75rem;
+  background-color: hsl(216deg, 53%, 9%);
+}
+footer > img {
+  width: 6.75rem;
+  margin-bottom: 2.1875rem;
+}
+footer .__contacts-grid {
+  display: grid;
+  grid-template-columns: 10% auto;
+  row-gap: 1rem;
+}
+footer .__contacts-grid img {
+  padding-top: 0.25rem;
+}
+footer .__contacts-grid p {
+  text-align: left;
+}
+footer .--list-heading {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  margin-top: 3rem;
+}
+footer ul a {
+  color: #FFF;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+footer ul a:hover {
+  color: hsl(176deg, 68%, 64%);
+}
+footer ul a:active {
+  color: hsl(198deg, 60%, 50%);
+}
+footer ul li {
+  margin-top: 1rem;
+}
+footer .__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.625rem;
+  padding-block: 3.5rem;
+}
+footer .__social i {
+  padding: 0.5rem;
+  border: solid white 1px;
+  border-radius: 1.875rem;
+  cursor: pointer;
+}
+footer .__social i:hover {
+  color: hsl(176deg, 68%, 64%);
+  border-color: hsl(176deg, 68%, 64%);
+}
+footer .__social i:active {
+  color: hsl(198deg, 60%, 50%);
+  border-color: hsl(198deg, 60%, 50%);
 }/*# sourceMappingURL=main.css.map */
