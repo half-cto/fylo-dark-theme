@@ -9,6 +9,7 @@
   
   <title> Fylo landing page with dark theme and features grid</title>
   <script src="https://kit.fontawesome.com/cfdd99c69d.js" crossorigin="anonymous"></script>
+  <script src="./js/main.js" defer></script>
 
 </head>
 <body>
@@ -25,11 +26,8 @@
   <main>
     <section class="hero-sct">
 
-        <img src="./images/illustration-intro.png" alt="Office workers taking documents from oversized folder">
-        <!-- <img 
-          class="hero-sct__background"
-          src="./images/bg-curvy-mobile.svg"
-          alt="bacground-image"> -->
+        <img  src="./images/illustration-intro.png"
+              alt="Office workers taking documents from oversized folder">
         <h1>All your files in one secure location, accessible anywhere.</h1>
         <p class="hero-sct__paragraph">
           Fylo stores all your most important files in one secure location. Access them wherever
@@ -38,7 +36,6 @@
         <button type="button">Get Started</button>
 
     </section>
-    
     <section class="features-sct">
         <div class="features-sct__card">
           <img src="./images/icon-access-anywhere.svg" alt="desktop icon">
@@ -87,10 +84,9 @@
           </p>
           <div>
             <a href="">See how Fylo works</a>
-            <img src="./images/icon-arrow.svg" alt="Arrow icon">
+            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><circle id="b" cx="6" cy="6" r="6"/><filter x="-25%" y="-25%" width="150%" height="150%" filterUnits="objectBoundingBox" id="a"><feOffset in="SourceAlpha" result="shadowOffsetOuter1"/><feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"/><feColorMatrix values="0 0 0 0 0.384313725 0 0 0 0 0.878431373 0 0 0 0 0.850980392 0 0 0 0.811141304 0" in="shadowBlurOuter1"/></filter></defs><g fill="none" fill-rule="evenodd"><g transform="translate(2 2)"><use fill="#000" filter="url(#a)" xlink:href="#b"/><use fill="#62E0D9" xlink:href="#b"/></g><path d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z" fill="#1B2330"/></g></svg>
           </div>
         </div>
-
     </section>
     <section class="testimonial-sct">
 
@@ -144,43 +140,46 @@
             It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
             questions, our support team would be happy to help you.
           </p>
-          <div>
+          <div class="get-access-sct__card__form-wrap">
             <input type="text" name="email" id="email" aria-label="e-mail input field" placeholder="email@example.com">
-            <button type="button">Get Started For Free</button>
+            <button type="button" id="submit">Get Started For Free</button>
+            <p class="--error" id="error">Error, please check your email</p>
           </div>
         </div>
     </section>
   </main>
   <footer>
       <img src="./images/logo.svg" alt="Fylo logo">
-      <div class="__contacts-grid">
-        <img src="./images/icon-location.svg" alt="location icon">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-          dolore magna aliqua</p>
-        <img src="./images/icon-phone.svg" alt="phone icon">
-        <p>+1-543-123-4567</p>
-        <img src="./images/icon-email.svg" alt="email icon">
-        <p>example@fylo.com</p>
-      </div>
-      <div class="__about">
-        <p class="--list-heading">About Us</p>
-        <ul>
-          <li><a href="">Jobs</a></li>
-          <li><a href="">Press</a></li>
-          <li><a href="">Blog</a></li>
-        </ul>
-      </div>
-      <div class="__contact">
-        <p class="--list-heading">Contact Us</p>
-        <ul>
-          <li><a href="">Terms</a></li>
-          <li><a href="">Privacy</a></li>
-        </ul>
-      </div>
-      <div class="__social">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
+      <div class="__footer-wrap">
+        <div class="__contacts-grid">
+          <img src="./images/icon-location.svg" alt="location icon">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua</p>
+          <img src="./images/icon-phone.svg" alt="phone icon">
+          <p>+1-543-123-4567</p>
+          <img src="./images/icon-email.svg" alt="email icon">
+          <p>example@fylo.com</p>
+        </div>
+        <div class="__about">
+          <p class="--list-heading">About Us</p>
+          <ul>
+            <li><a href="">Jobs</a></li>
+            <li><a href="">Press</a></li>
+            <li><a href="">Blog</a></li>
+          </ul>
+        </div>
+        <div class="__contact">
+          <p class="--list-heading"><a href="">Contact Us</a></p>
+          <ul>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Privacy</a></li>
+          </ul>
+        </div>
+        <div class="__social">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
       </div>
   </footer>
 </body>

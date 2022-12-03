@@ -3,8 +3,8 @@
 // * media queries
 
 @mixin desktop {
-    @media screen and (min-size: $desktop-size) {
-        @content
+    @media screen and (min-width: $desktop-size) {
+        @content;
     }
 }
 
